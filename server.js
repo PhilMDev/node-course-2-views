@@ -54,6 +54,12 @@ app.get('/projects', (req, res) => {
     });
 });
 
+app.get('/webapps', (req, res) => {
+    res.render('webapps.hbs', {
+        pageTitle: 'Web Applications'
+    });
+});
+
 // /bad - send back json with errorMessage
 app.get('/bad', (req, res) => {
   res.send({
